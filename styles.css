@@ -1,0 +1,152 @@
+/* Estilo básico e cores principais */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+h1::before {
+    content: "";
+    background: url('images/banner-principal.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 8px 8px 0 0;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.queijo {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.queijo-img {
+    max-width: 60%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.queijo-subtitulo {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li h3 {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #fff;
+    background-color: #555;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    background: url('images/banner-subtitulo.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+    border-radius: 8px 8px 0 0;
+}
+
+li::marker {
+    color: #333;
+    font-size: 1.5em;
+}
+
+li {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    flex: 1;
+    text-align: left;
+}
+
+.footer-icon {
+    width: 900px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px; /* Altura máxima do banner */
+    display: block;
+    margin: 0 auto;
+}
